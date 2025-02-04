@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+
+    <style>
+      body {
+        background-color: rgb(0, 0, 0);
+        h1{
+          color: white;
+          font-size:large ;
+        }
+
+        /* Style the container of buttons to use flexbox */
+        button {
+          width: 50px; /* Set a fixed width for consistency */
+          height: 60px; /* Set height to make the buttons look uniform */
+          width: 60px;
+          margin: 5px; /* Space between buttons */
+          font-size: 30px; /* Font size for better visibility */
+          cursor: pointer; /* Change cursor to indicate it's clickable */
+          border: 1px solid #ccc; /* Add border for clarity */
+          border-radius: 50%; /* Rounded corners */
+          color: white;
+          /*background-color:rgb( 1 2 2);  /*Light background color */
+          /*transition: background-color 0.3s; /* Smooth transition for background change */
+        }
+
+        /* Add a hover effect for the buttons */
+        button:hover {
+          background-color: #1ae486; /* Darker background when hovered */
+        }
+
+        /* Create a flex container for each row of buttons */
+        div {
+          display: flex;
+          justify-content: space-between; /* Space buttons evenly */
+          flex-wrap: wrap; /* Allow wrapping of buttons if needed */
+        }
+
+        /* You can also style the overall button container */
+        .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .grey {
+          background-color: rgb(51, 51, 51);
+        }
+
+        .orange {
+          background-color: orange;
+        }
+
+        .clear-button {
+          font-size: 19px;
+          background-color: rgb(51, 51, 51);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Simple Calculator</h1>
+
+    <!-- <div> -->
+    <button
+      class="grey"
+      onclick="
+         calculation = calculation += '1';
+        console.log(calculation);
+        
+        "
+    >
+      1
+    </button>
+    <button
+      class="grey"
+      onclick="
+      calculation = calculation += '2';
+     console.log(calculation);
+     
+      
+      
+      "
+    >
+      2
+    </button>
+
+    <button
+      class="grey"
+      onclick="
+      calculation = calculation += '3';
+     console.log(calculation);
+     
+      
+      
+      "
+    >
+      3
+    </button>
+
+    <button
+      class="orange"
+      onclick="
+      calculation = calculation += ' + ';
+     console.log(calculation);
+     
+      
+      
+      
+      
+      "
+    >
+      +
+    </button>
+
+    <!-- </div> -->
+
+    <br />
+    <!-- <div> -->
+    <button
+      class="grey"
+      onclick="
+      calculation = calculation += '4';
+     console.log(calculation);
+     
+     
+      
+      
+      
+      
+      "
+    >
+      4
+    </button>
+    <button
+      class="grey"
+      onclick="
+      calculation = calculation += '5';
+     console.log(calculation);
+     
+      
+      
+      "
+    >
+      5
+    </button>
+    <button
+      class="grey"
+      onclick="
+      calculation = calculation += '6';
+     console.log(calculation);
+     
+      
+      
+      "
+    >
+      6
+    </button>
+    <button
+      class="orange"
+      onclick="
+      calculation = calculation += '-';
+     console.log(calculation);
+     
+      
+      
+      "
+    >
+      -
+    </button>
+    <!-- </div> -->
+
+    <br />
+    <!-- <div> -->
+    <button
+      class="grey"
+      onclick="
+      calculation = calculation += '7';
+     console.log(calculation);
+     
+      
+      
+      "
+    >
+      7
+    </button>
+    <button
+      class="grey"
+      onclick="
+      calculation = calculation += '8';
+     console.log(calculation);
+     
+      
+      
+      "
+    >
+      8
+    </button>
+    <button
+      class="grey"
+      onclick="
+      calculation = calculation += '9';
+     console.log(calculation);
+     
+      
+      
+      "
+    >
+      9
+    </button>
+    <button
+      class="orange"
+      onclick="
+      calculation = calculation += '*';
+     console.log(calculation);
+     
+      
+      
+      "
+    >
+      *
+    </button>
+    <!-- </div> -->
+
+    <br />
+
+    <!-- <div> -->
+    <button
+      class="grey"
+      onclick="
+      calculation = calculation += '0';
+     console.log(calculation);
+     
+      
+      
+      "
+    >
+      0
+    </button>
+    <button
+      class="grey"
+      onclick="
+      calculation = calculation += '.';
+     console.log(calculation);
+     
+      
+      
+      "
+    >
+      .
+    </button>
+    <button
+      class="grey"
+      onclick="
+      calculation = eval(calculation);
+      console.log(calculation);
+      
+      
+      "
+    >
+      =
+    </button>
+    <button
+      class="orange"
+      onclick="
+      calculation = calculation += '/';
+     console.log(calculation);
+     
+      
+      
+      "
+    >
+      /
+    </button>
+    <!-- </div> -->
+
+    <br />
+    <!-- <div> -->
+    <button
+      class="clear-button"
+      onclick="
+
+    
+   //console.log(calculation);
+   let message = 'cleared';
+   console.log(message);
+   
+        
+        "
+    >
+      clear
+    </button>
+    <button
+      class="grey"
+      onclick="
+    calculation = calculation += ' % ';
+   console.log(calculation);
+   
+    
+    
+    
+    "
+    >
+      %
+    </button>
+    <!-- </div> -->
+
+    <script>
+      let calculation = "";
+    </script>
+  </body>
+</html>
